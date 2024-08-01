@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+ @import url('https://fonts.cdnfonts.com/css/miama');
+
+
+*{
+    /* width: 100%;
+    height: auto; */
+    /* background-color: #000000; */
+    color: white;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0%;
+  
+}
+/* common style */
+.logo-style{
+    font-weight: 900;
+    color: #E6533C;
+    font-style: italic;
+    font-size: 3rem;
+}
+.display-flex{
+    display: flex;
+}
+.bold-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.gray-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #a39b9b;
+  
+}
+/* navbar style */
+#header{
+    background-color: #474444 !
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    /* margin-bottom: 50px; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+ul{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+ul > li{
+    padding:0px 20px;
+    font-size: 20px;
+    align-items: center;
+}
+.menu-button-style{
+    background-color: #E6533C;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+.menu-item-style{
+    padding: 10px 20px;
+}
+/* banner part start */
+#header{
+    background-color: rgb(21, 21, 21);
+   
+
+}
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.banner-info{
+    width: 30%;
+}
+.banner-title{
+font-size: 5rem;
+font-weight: 900;
+}
+.banner-description{
+    color: #474444;
+    font-size: 1rem;
+    padding: 30px 0px;
+}
+.banner-button{
+    font-size: 18px;
+    padding:15px 50px;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 1);
+}
+.transparent-btn{
+    background-color: #151515;
+}
+.orange-background{
+    background-color: #E6533C;
+    border-color: #E6533C;
+}
+.thin-etalic-text{
+    margin: 0%;
+    font-weight: 100;
+    font-size: 6rem;
+    font-family: 'Miama', sans-serif;
+    margin: 0%;
+    padding: 0%;
+
+
+}
+.banner-img{
+    position: relative;
+}
+.transparent-card-1{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+ border: none;
+ border-radius: 5px;
+    width: 200px;
+    height: 150;
+    padding: 20px;
+margin-left: 60%;
+margin-top: 50%;
+}
+.transparent-card-2{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+ border: none;
+ border-radius: 5px;
+    width: 200px;
+    height: 150;
+    padding: 20px;
+margin-left: -140%;
+margin-top: 100%;
+}
+.transparent-card-title{
+    font-weight: 900;
+}
+.circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #E6533C;
+    margin-top: 5px;
+}
+
+/* main section style */
+.main-section{
+    padding-top: 40px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* habit section design */
+
+.circle-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.habits{
+    /* position: relative; */
+    /* width: 50%; */
+    display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ gap: 60px;
+ justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   margin-bottom: 50px;
+}
+.image-container{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+   
+}
+.run-container{
+    /* width: 100%; */
+    position: relative;
+}
+.run-section{
+  
+ padding:50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    border-radius: 20px;
+}
+.run-img{
+    width: 80%;
+    border-radius: 10px;
+}
+.run-miles-info{
+    width: 60%;
+}
+.run-miles-info h1, p {
+    text-align: left;
+}
+.run-info{
+    padding:20px 0px;
+    text-align: left;
+}
+.run-button{
+   display: flex;
+  justify-content: left;
+}
+/* bmi section */
+.bmi-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+ table th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+ 
+   padding: 20px 40px;
+}
+table{
+    border-collapse: collapse;
+}
+
+/* responsive */
+@media screen and (min-width: 512){
+    .banner, .navbar{
+  display: flex;
+      flex-wrap: wrap;
+        align-items: center;
+    }
+    header{
+        width: 50%;
+        display: none;
+    }
+    .menu-items{
+        /* display: none; */
+    }
+    .image-container{
+        display: flex;
+      flex-direction: column;
+    }
+}
