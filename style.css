@@ -226,9 +226,24 @@ margin-top: 100%;
   justify-content: left;
 }
 /* bmi section */
+.bmi{
+    padding: 50px 20px;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 1);
+}
+.bmi-info{
+    padding: 100px;
+    width: 60%;
+    margin: 0% auto;
+    text-align: center;
+}
+.bmi-info p{
+    width: 80%;
+    margin: auto;
+}
 .bmi-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
  table th, td{
@@ -239,6 +254,69 @@ margin-top: 100%;
 table{
     border-collapse: collapse;
 }
+.bmi-calculation{}
+form{
+    width: 100%;
+    position: relative;
+    border:1px solid #E6533C;
+}
+form input{
+    padding: 20px 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 2px;
+    border-radius: 5px; 
+}
+.last-item{
+    /* position: absolute; */
+    left: 0%;
+    width: 100%;
+}
+/* .........member info */
+.team {
+    width: 100vw;
+    height: auto;
+}
+.team-info{
+    width: 40%;
+    margin: 0% auto;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.team-details {
+    background-color: #474444;
+    margin: 0 auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.member-info {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.member-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.member-identity {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; }
+
+
+
+
+
 
 /* responsive */
 @media screen and (min-width: 512){
