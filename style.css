@@ -12,8 +12,10 @@
   font-weight: normal;
   font-style: normal;
   margin: 0%;
+
   
 }
+
 /* common style */
 .logo-style{
     font-weight: 900;
@@ -156,6 +158,7 @@ margin-top: 100%;
 /* main section style */
 .main-section{
     padding-top: 40px;
+    padding-bottom: 50px;
     background-color: black;
     color: white;
     width: 100%;
@@ -276,6 +279,7 @@ form input{
 .team {
     width: 100vw;
     height: auto;
+    padding: 80px;
 }
 .team-info{
     width: 40%;
@@ -318,7 +322,7 @@ form input{
 .fitness-section{
     padding: 80px 20px;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(25, 25, 25);
 }
 .fitness{
     margin: 0% auto;
@@ -353,8 +357,23 @@ form input{
 .menu-list h1{
     font-size: 1.6rem;
 }
-
+/* .......footer section design */
+.footer{
+    width: 100%;
+    background-color:rgb(25, 25, 25);
+}
 .footer-info{
+    text-align: center;
+}
+.copyright-info-details{
+    padding: 30px 10px;
+}
+hr{
+  margin-top: 10px;
+    margin: 0% auto;
+}
+.copyright-info{
+    padding: 10px;
     text-align: center;
 }
 
