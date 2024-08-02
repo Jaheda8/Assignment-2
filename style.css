@@ -221,18 +221,16 @@ ul > li {
 }
 
 .img-info {
-
-  
     width: 100%;
     max-width: 250px;
     text-align: center;
 }
-.img-info p, h3{
 
+.img-info p, h3 {
     text-align: center;
 }
-.img-info h3{
- /* border: 1px solid yellow; */
+
+.img-info h3 {
     padding-top: 20px;
     text-align: center;
 }
@@ -279,12 +277,12 @@ ul > li {
 .run-button {
     display: flex;
     justify-content: left;
-   margin: 20px 0px;
+    margin: 20px 0px;
 }
 
 /* ----------BMI section style --------------------*/
 .bmi {
-    padding: 50px 20px;
+    padding: 80px 20px;
     width: 100%;
     background-color: rgba(34, 34, 34, 1);
 }
@@ -302,22 +300,18 @@ ul > li {
 }
 
 .bmi-container {
+    width: 80vw;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    margin: 0% auto;
 }
-.bmi-heading{
+
+.bmi-heading {
     font-size: 1.5rem;
     font-weight: 800;
-    padding: 30px 0px;
     text-align: left;
-}
-table th, td {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px 40px;
-}
-table td {
-   color:rgba(255, 255, 255, 0.5);
 }
 
 table {
@@ -326,26 +320,51 @@ table {
     max-width: 500px;
 }
 
-.bmi-calculation {}
+table th, td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+}
+
+table td {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-chart, .bmi-calculation {
+    flex: 1;
+    min-width: 300px;
+}
 
 form {
     width: 100%;
-    position: relative;
-    /* border: 1px solid #E6533C; */
-}
-.bmi-info{}
-form input {
-    padding: 20px 60px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    margin: 2px;
-    border-radius: 5px;
-    width: 100%;
-    max-width: calc(100% - 4px);
 }
 
-.last-item {
-    left: 0%;
+form h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+form p {
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 30px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-row input {
+    width: calc(50% - 5px);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.input-row .full-width {
     width: 100%;
 }
 
@@ -383,6 +402,16 @@ form input {
     width: 100%;
 }
 
+.member-info h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.member-info p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .member-info img {
     width: 100%;
     height: auto;
@@ -393,6 +422,9 @@ form input {
     position: absolute;
     bottom: 10px;
     left: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
 }
 
 /* ------------Fitness section style------------- */
@@ -459,22 +491,25 @@ form input {
 .footer-info {
     text-align: center;
 }
-.footer-description{
+
+.footer-description {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.1rem;
 }
+
 .copyright-info-details {
     padding: 30px 10px;
 }
-.hr-line{
+
+.hr-line {
     padding: 30px 0px;
 }
+
 hr {
     width: 60vw;
     margin-top: 10px;
     margin: 0 auto;
     border: 1px solid #303030;
-    /* color: #303030; */
 }
 
 .copyright-info {
@@ -484,137 +519,156 @@ hr {
 }
 
 /* ..........responsive for mobile devices------------ */
-
 @media screen and (max-width: 768px) {
     .fa-icon {
         display: block;
         font-size: 25px;
     }
- 
-    .banner-img{
+
+    .banner-img {
         width: 70vw;
     }
-    /* .banner-img button{
-        width: 40vw;
-        height: 30vw;
-    } */
+
     .transparent-card-1, .transparent-card-2 {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.1);
-        border: none;
-        border-radius: 5px;
         width: 200px;
-        padding: 10px ;
-      
+        padding: 10px;
     }
- 
-.transparent-card-2 h1,p{
-    margin-left: 20px;
-    text-align: justify;
-    padding: 20px;
-}
-.circle{
-    margin-top:20px;
-}
-    .banner-info p,h1{
+
+    .transparent-card-2 h1, p {
+        margin-left: 20px;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .circle {
+        margin-top: 20px;
+    }
+
+    .banner-info p, h1 {
         padding: 20px 20px;
         text-align: left;
     }
+
     .banner-title {
         font-size: 3.5rem;
         font-weight: 800;
     }
+
     .bold-title {
         font-size: 2rem;
         font-weight: 800;
     }
-    .menu-items{
+
+    .menu-items {
         display: none;
     }
-    .main-section{
+
+    .main-section {
         width: 100vw;
         position: relative;
     }
-    .run-section{
+
+    .run-section {
         width: 90vw;
         margin: 0% auto;
-       
-      
     }
+
     .bmi-info {
         padding: 0px;
         width: 90%;
         margin: 0 auto;
         text-align: center;
     }
-    
+
+    .bmi-heading {
+        padding-top: 40px;
+        text-align: center;
+    }
+
     .bmi-info p {
         width: 90%;
         text-align: center;
         margin: auto;
         padding: 5px 10px;
     }
-    .run-miles-info{
+
+    .run-miles-info {
         margin: 0% auto;
         text-align: center;
         align-items: center;
     }
-    .habits{
-   
+
+    .habits {
         margin: 0 auto;
-       padding: 10px 50px;
-      
+        padding: 10px 50px;
     }
-    .habits-info{
-   width: 97vw;
-   text-align: center;
-   margin: 0% auto;
+
+    .habits-info {
+        width: 97vw;
+        text-align: center;
+        margin: 0% auto;
     }
-    .habit-description{
+
+    .habit-description {
         text-align: center;
     }
+
     .navbar {
         padding-bottom: 50px;
         display: flex;
         flex-direction: row;
     }
+
     .banner {
         width: 100vw;
         flex-direction: column;
         align-items: center;
     }
+
     .logo-details, .menu-list {
         width: 100%;
         max-width: 100%;
     }
-    .fitness-section{
+
+    .fitness-section {
         margin: 0% auto;
     }
-    /* .banner-info, .banner-img {
-        width: 100%;
-    } */
+
     .image-container {
         flex-direction: column;
         align-items: center;
     }
+
     .run-section {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
     .run-miles-info {
         width: 100%;
     }
+
     .bmi-container {
         flex-direction: column;
         align-items: center;
     }
+
     .team-details {
         grid-template-columns: 1fr;
     }
+
     .fitness-container {
-   
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-row input {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
