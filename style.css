@@ -35,7 +35,7 @@ body {
 .gray-description {
     font-size: 1rem;
     font-weight: 400;
-    color: #a39b9b;
+    color: rgba(128, 128, 128, 1);
 }
 
 /*------------ Navbar style ------------ */
@@ -221,8 +221,19 @@ ul > li {
 }
 
 .img-info {
+
+  
     width: 100%;
     max-width: 250px;
+    text-align: center;
+}
+.img-info p, h3{
+
+    text-align: center;
+}
+.img-info h3{
+ /* border: 1px solid yellow; */
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -240,6 +251,7 @@ ul > li {
     background-color: #222222;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
     border-radius: 20px;
 }
 
@@ -278,7 +290,7 @@ ul > li {
 }
 
 .bmi-info {
-    padding: 80px;
+    padding: 50px;
     width: 60%;
     margin: 0 auto;
     text-align: center;
@@ -304,6 +316,9 @@ table th, td {
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px 40px;
 }
+table td {
+   color:rgba(255, 255, 255, 0.5);
+}
 
 table {
     border-collapse: collapse;
@@ -318,7 +333,7 @@ form {
     position: relative;
     /* border: 1px solid #E6533C; */
 }
-
+.bmi-info{}
 form input {
     padding: 20px 60px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -343,7 +358,7 @@ form input {
 
 .team-info {
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 40px 0px;
     text-align: center;
@@ -473,12 +488,40 @@ hr {
 @media screen and (max-width: 768px) {
     .fa-icon {
         display: block;
+        font-size: 25px;
     }
+ 
     .banner-img{
-        width: 60vw;
+        width: 70vw;
+    }
+    /* .banner-img button{
+        width: 40vw;
+        height: 30vw;
+    } */
+    .transparent-card-1, .transparent-card-2 {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        padding: 10px ;
+      
+    }
+ 
+.transparent-card-2 h1,p{
+    margin-left: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+.circle{
+    margin-top:20px;
+}
+    .banner-info p,h1{
+        padding: 20px 20px;
+        text-align: left;
     }
     .banner-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 800;
     }
     .bold-title {
@@ -531,6 +574,7 @@ hr {
         text-align: center;
     }
     .navbar {
+        padding-bottom: 50px;
         display: flex;
         flex-direction: row;
     }
