@@ -671,4 +671,18 @@ hr {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    .more-details h1 , p{
+        text-align: center;
+    }
+    .logo-details h1, p{
+        text-align: center;
+
+    }
+  .center-text{
+    text-align: center;
+
+  }
 }
+
+
