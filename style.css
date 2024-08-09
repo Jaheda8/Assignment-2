@@ -314,6 +314,7 @@ ul > li {
     font-size: 1.5rem;
     font-weight: 800;
     text-align: left;
+    padding-bottom: 30px;
 }
 
 table {
@@ -518,7 +519,7 @@ form p {
 
 /* ----------Footer section design----------- */
 .footer {
-    width: 100%;
+    width: 100vw;
     background-color: rgb(25, 25, 25);
 }
 
@@ -532,6 +533,7 @@ form p {
 }
 
 .copyright-info-details {
+    max-width: 100vw;
     padding: 30px 10px;
 }
 
@@ -554,40 +556,94 @@ hr {
 
 /* ..........responsive for mobile devices------------ */
 @media screen and (max-width: 768px) {
+    /* #copyright-text{
+        
+        width: 100vw;
+        border: 1px solid rgb(211, 17, 66);
+padding: 0%;
+margin: 0% auto;
+        text-align: center;
+        color: rgb(54, 4, 46);
+        margin: 0% auto;
+
+    } */
+
+    #team-description{
+        text-align: center !important;
+    }
+    #copyright-text p{
+        text-align: center !important;
+    }
     .fa-icon {
         display: block;
         font-size: 25px;
     }
-
+    
+.copyright-info-details {
+    /* border: 1px solid yellow; */
+    max-width: 100vw;
+  padding: 0%;
+}
+.menu-list p{
+    text-align: center !important;
+}
+.menu-list h1{
+   padding-bottom: 10px;
+}
     .banner-img {
         width: 70vw;
     }
 
     .transparent-card-1, .transparent-card-2 {
         width: 200px;
-        padding: 10px;
+        padding-left: 20px !important;
     }
-
+ #transparent-card-h1{
+    text-align: center;
+ }
+    /* .transparent-card-2 {
+        margin-left: -120%;
+        margin-top: 100%;
+        padding-left: 20px !important;
+    } */
     .transparent-card-2 h1, p {
         margin-left: 20px;
         text-align: justify;
-        padding: 20px;
+        padding: 10px;
+        /* padding-left: 60px; */
     }
-
+#member-details-responsive{
+    text-align: left;
+    padding-left: 10px;
+}
     .circle {
         margin-top: 20px;
+        margin-left: -10px;
+        /* padding-left: 20px; */
     }
 
     .banner-info p, h1 {
-        padding: 20px 20px;
+        width: 80vw;
+        padding: 40px 40px;
         text-align: left;
     }
 
     .banner-title {
         font-size: 3.5rem;
         font-weight: 800;
+        padding-left: 20px;
     }
-
+    .banner-description {
+        /* color: #474444;
+        font-size: 1rem; */
+        padding: 50px 0px;
+    }
+    #banner-details{
+        padding: 30px 0px;
+    }
+    main p{
+        text-align: center;
+    }
     .bold-title {
         font-size: 2rem;
         font-weight: 800;
@@ -610,7 +666,7 @@ hr {
 
     .bmi-info {
         padding: 0px;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         text-align: center;
     }
@@ -646,7 +702,7 @@ hr {
     }
 
     .habit-description {
-        text-align: center;
+        text-align: center !important;
     }
 
     .navbar {
@@ -692,7 +748,22 @@ hr {
     .team-details {
         grid-template-columns: 1fr;
     }
+/* .member-identity{
+    padding: 0 !important;
+} */
+ /* ........... */
+.banner-info p, h1 {
+    padding: 0;
+    text-align: left;
+}
+.transparent-card-2 h1, p {
+    margin-left: 20px;
+    text-align: left!important;
+    /* padding-left:4px; */
+}
 
+
+/* ............... */
     .fitness-container {
         flex-direction: column;
         justify-content: space-between;
@@ -708,8 +779,11 @@ hr {
         margin-bottom: 10px;
     }
 
-    .more-details h1 , p{
+    .more-details p{
         text-align: center;
+    }
+    #footer-list{
+        text-align: left;
     }
     .logo-details h1, p{
         text-align: center;
@@ -724,6 +798,17 @@ hr {
     text-align: center;
 
   }
+
+  .member-identity {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin: 0%;
+    /* padding: 10px;
+    width: 100%; */
+    padding: 0%;
+    /* text-align: justify; */
+}
 }
 
 
